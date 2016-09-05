@@ -1,1 +1,7 @@
-Commande ECHO activ‚e.
+/********** Img Div **********/
+
+.wrap-img{
+  background-image: url(../img/img1.jpg);
+  width: 500px;
+  height: 500px;
+}
