@@ -18,9 +18,12 @@
       </div>
       <div class="col-md-10 col-md-offset-1">
         <div class="wrap-img">
-          
+          <div class="container-div">
+
+          </div>
         </div>
       </div>
+      <input type="button" class="btn btn-default delete-div" name="name" value="Supprimer un carré">
     </div>
 
     <script src="vendor/jquery/dist/jquery.min.js" charset="utf-8"></script>
