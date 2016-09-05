@@ -14,9 +14,8 @@ $(function () {
   });
 
   // On crée le quadrillage
-  var createDiv = new Array();
   for (var i = 0; i <= 461; i++) {
-    createDiv[i] = $('.container-div').append("<div class='div-mouse-hover" + i + " hover-effect' id='div" + i + "'></div>");
+    var createDiv = $('.container-div').append("<div class='div-mouse-hover" + i + " hover-effect' id='div" + i + "'></div>");
     $('.div-mouse-hover' + i + '').css({
       'display': 'inline-block',
       'width': '20px',
@@ -25,10 +24,10 @@ $(function () {
       'margin-top': '-2px',
       'background-color': "#FFFFFF"
     });
+    $('#delete-div').click(function () {
+      $('.div-mouse-hover' + i + '').fadeOut(500);
+    });
   }
   // On crée l'effet "Suppression"
-  $('.delete-div').click(function () {
-    $('.div-mouse-hover' + i + '').fadeOut(500);
-  });
 
 });

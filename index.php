@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <input type="button" class="btn btn-default delete-div" name="name" value="Supprimer un carré">
+      <input type="button" class="btn btn-default" id="delete-div" name="name" value="Supprimer un carré">
     </div>
 
     <script src="vendor/jquery/dist/jquery.min.js" charset="utf-8"></script>
