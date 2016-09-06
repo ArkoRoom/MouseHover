@@ -18,11 +18,10 @@ $(function () {
   function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min +1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   // On crée le quadrillage
-  function createDiv() {
     for (var i = 0; i < nbSquare; i++) {
       var createDiv = $('.container-div').append("<div class='div-mouse-hover" + i + " hover-effect' id='div" + i + "'></div>");
       $('.div-mouse-hover' + i + '').css({
@@ -34,12 +33,12 @@ $(function () {
         'background-color': "#FFFFFF"
       });
     }
-  }
-  setTimeout(createDiv, 500);
 
   // On crée l'effet "Suppression"
   $('#delete-div').click(function () {
-    $('.div-mouse-hover' + getRandomIntInclusive(0, nbSquare) ).fadeTo('slow', 0);
+    for (var i = 0; i < (nbSquare / 3); i++) {
+      $('.div-mouse-hover' + getRandomIntInclusive(0, nbSquare) ).fadeTo('slow', 0.1);
+    }
   });
 
 });
